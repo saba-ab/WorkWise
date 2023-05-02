@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.header-container {
+  width: calc(100% - 280px);
+  /* max-width: 1080px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 40px 0;
+  /* outline: 2px dotted; */
+}
+.workwise {
+  display: flex;
+  align-items: center;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 40px;
+}
+.workwise a {
+  text-decoration: none;
+  color: black;
+}
+.workwise p {
+  margin-left: 20px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons > div {
+  margin-right: 15px;
+}
+.input-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.search {
+  width: calc(100% - 340px);
+  margin: 50px 0 50px 0;
+  border: 1px solid black;
+  border-radius: 62px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 0 25px 0 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 60px;
+}
+.search input {
+  width: 65%;
+  font-family: "firaGO";
+  font-size: 32px;
+  font-weight: 200;
+  border: none;
+  margin-left: 15px;
+}
+.stats::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 87px;
+  background-color: rgba(0, 0, 0, 0.4);
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.search p {
+  font-family: "firaGO";
+  font-size: 32px;
+  margin: 0 10px 0 10px;
+}
+.search :last-child {
+  margin-left: auto;
+}
+.search :last-child::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 87px;
+  background-color: rgba(0, 0, 0, 0.4);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.bold-search {
+  display: flex;
+}
+.stats {
+  display: flex;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.talents-wrapper {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 30px;
+  margin-bottom: 100px;
+}
+.talent {
+  width: 392px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: "inter";
+}
+.talent-image {
+  width: 340px;
+  height: 284px;
+  position: relative;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 15px;
+}
+.talent-image img:first-child {
+  width: 100%;
+}
+.talent-image :last-child {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.salary {
+  margin: 0 auto;
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.salary p:first-child {
+  font-size: 14px;
+  font-family: "inter";
+  font-weight: 700;
+}
+.salary p:last-child {
+  font-size: 18px;
+  font-weight: 300;
+}
+.salary p span {
+  font-weight: 800;
+}
+.rating p:first-child {
+  font-size: 14px;
+  font-weight: 300;
+}
+.rating p:first-child::after {
+  content: "tbilisi";
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 200;
+  margin-left: 5px;
+}
+.rating {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+.star {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.send-message {
+  display: flex;
+  width: 225px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  font-weight: 400;
+}
+.send-message button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #087dbf;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  align-items: center;
+  font-family: "inter";
+  animation-duration: 0.5s;
+  animation-delay: 0.4;
+  transition-timing-function: ease;
+}
+.send-message button:hover {
+  cursor: pointer;
+  background-color: rgb(148, 148, 237);
+  color: black;
+  scale: 1.05;
+}
+.send-message button p {
+  margin-left: 10px;
+}

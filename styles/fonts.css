@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "firaGO";
+  src: url(../fonts/FiraGO-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/inter.ttf) format("truetype");
+}
