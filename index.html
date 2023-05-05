@@ -45,12 +45,107 @@
         <div class="search">
           <img src="media/input/search.svg" alt="search" />
           <input type="text" id="text" placeholder="search" />
-          <div class="stats">
-            <img src="media/input/stats.svg" alt="stats" />
+          <div id="filterBlock" class="filter-block">
+            <div class="category-wrapper">
+              <h4 class="filter-header">Category</h4>
+              <div id="ui" class="category"><p>UI Designer</p></div>
+              <div id="ux" class="category"><p>UX Researcher</p></div>
+              <div id="web" class="category"><p>Web Developer</p></div>
+              <div id="mob" class="category"><p>Mobile Developer</p></div>
+              <div id="it" class="category"><p>IT Manager</p></div>
+              <div id="3d" class="category"><p>3D Artist</p></div>
+              <div id="proj" class="category"><p>Project Manager</p></div>
+              <div id="soc" class="category"><p>Social Media Manager</p></div>
+              <div id="graph" class="category"><p>Graphic Designer</p></div>
+              <div id="game" class="category"><p>Game Developer</p></div>
+              <div id="data" class="category"><p>Data Analyst</p></div>
+            </div>
+            <div class="price-range">
+              <h4 class="filter-header">Price Range</h4>
+              <input type="range" id="range" name="range" min="0" max="150" />
+            </div>
+            <div class="ratings-wrapper">
+              <h4 class="filter-header">Ratings</h4>
+              <div id="allStar" class="rate">
+                <img src="./media/talents/blue-star.svg" alt="star" />
+                <p>All</p>
+              </div>
+              <div id="star5" class="rate">
+                <img src="./media/talents/blue-star.svg" alt="star" />
+                <p>5</p>
+              </div>
+              <div id="star4" class="rate">
+                <img src="./media/talents/blue-star.svg" alt="star" />
+                <p>4</p>
+              </div>
+              <div id="star3" class="rate">
+                <img src="./media/talents/blue-star.svg" alt="star" />
+                <p>3</p>
+              </div>
+              <div id="star2" class="rate">
+                <img src="./media/talents/blue-star.svg" alt="star" />
+                <p>2</p>
+              </div>
+            </div>
+            <div class="location-wrapper">
+              <h4 class="filter-header">Location</h4>
+              <div id="tbilisi" class="location">
+                <p>Tbilisi</p>
+              </div>
+              <div id="kutaisi" class="location">
+                <p>Kutaisi</p>
+              </div>
+              <div id="batumi" class="location">
+                <p>Batumi</p>
+              </div>
+              <div id="rustavi" class="location">
+                <p>Rustavi</p>
+              </div>
+            </div>
+            <div class="filter-act">
+              <button id="clear">Clear All</button>
+              <button id="filterButton">Filter</button>
+            </div>
           </div>
-          <p>Talent</p>
-          <img src="media/input/down-row.svg" alt="" />
-          <div class="bold-search">
+          <div id="filter" class="filter">
+            <img src="media/input/stats.svg" alt="filter" />
+          </div>
+          <div class="talent-dropdawn">
+            <div id="talentDropdawn" class="click-to-drop">
+              <p class="input-text">Talent</p>
+              <img src="media/input/down-row.svg" alt="row" />
+            </div>
+            <div id="dropdawnBox" class="talent-content">
+              <div class="dropdawn-box">
+                <img src="./media/dropdawn-icons/talent-user.svg" alt="user" />
+                <div class="dropdawn-text">
+                  <p>Talent</p>
+                  <p class="light-text">Hire professionals and agencies</p>
+                </div>
+              </div>
+              <div class="dropdawn-box">
+                <img
+                  src="./media/dropdawn-icons/talent-projects.svg"
+                  alt="paperwork"
+                />
+                <div class="dropdawn-text">
+                  <p>Projects</p>
+                  <p class="light-text">Buy ready-to-start services</p>
+                </div>
+              </div>
+              <div class="dropdawn-box">
+                <img
+                  src="./media/dropdawn-icons/talent-jobs.svg"
+                  alt="briefcase"
+                />
+                <div class="dropdawn-text">
+                  <p>Jobs</p>
+                  <p class="light-text">Apply to jobs posted by clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="boldSearch" class="bold-search">
             <img src="./media/input/bold-search.svg" alt="search" />
           </div>
         </div>
@@ -362,5 +457,6 @@
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>

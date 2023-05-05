@@ -57,6 +57,7 @@ header {
   flex-direction: row;
   align-items: center;
   min-width: 60px;
+  position: relative;
 }
 .search input {
   width: 65%;
@@ -66,7 +67,7 @@ header {
   border: none;
   margin-left: 15px;
 }
-.stats::after {
+.filter::after {
   content: "";
   display: inline-block;
   width: 2px;
@@ -75,15 +76,15 @@ header {
   vertical-align: middle;
   margin-left: 10px;
 }
-.search p {
+.input-text {
   font-family: "firaGO";
   font-size: 32px;
   margin: 0 10px 0 10px;
 }
-.search :last-child {
+.bold-search {
   margin-left: auto;
 }
-.search :last-child::before {
+.bold-search::before {
   content: "";
   display: inline-block;
   width: 2px;
@@ -95,8 +96,11 @@ header {
 .bold-search {
   display: flex;
 }
-.stats {
+.filter {
   display: flex;
+}
+.filter:hover {
+  cursor: pointer;
 }
 .container {
   display: flex;
@@ -134,10 +138,9 @@ header {
 }
 .salary {
   margin: 0 auto;
-  width: 290px;
+  padding: 10px 10%;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
 }
 .salary p:first-child {
   font-size: 14px;
@@ -163,11 +166,10 @@ header {
   margin-left: 5px;
 }
 .rating {
-  width: 290px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 10px 0 10px;
+  padding: 10px 10%;
 }
 .star {
   display: flex;
@@ -206,4 +208,162 @@ header {
 }
 .send-message button p {
   margin-left: 10px;
+}
+.talent-dropdawn {
+  display: flex;
+  align-items: center;
+  width: 29%;
+  position: relative;
+}
+.click-to-drop {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.click-to-drop:hover {
+  cursor: pointer;
+}
+.talent-content {
+  position: absolute;
+  top: 63px;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+  width: 100%;
+}
+.dropdawn-box {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  background-color: white;
+}
+.dropdawn-box:hover {
+  background-color: #087dbf;
+  cursor: pointer;
+}
+.dropdawn-box:hover .light-text {
+  color: white;
+}
+.dropdawn-box:last-child {
+  border-radius: 0 0 20px 20px;
+}
+.dropdawn-box img {
+  padding: 25px 20px;
+}
+.light-text {
+  font-size: 13px;
+  color: #929292;
+  font-family: "inter";
+  padding-top: 10px;
+}
+.dropdawn-bold-text {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "inter";
+}
+.filter-block {
+  width: 65%;
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  border-radius: 20px;
+  border: 1px solid black;
+  opacity: 0;
+}
+.category-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px 10px;
+  padding: 15px;
+}
+.category-wrapper p {
+  font-size: 20px;
+  font-family: "firaGO";
+}
+.category {
+  border: 1px solid #087dbf;
+  padding: 5px;
+  border-radius: 10px;
+}
+.category:hover {
+  cursor: pointer;
+}
+.price-range {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+input[type="range"] {
+  background-color: #ddd;
+  width: 80%;
+  margin: 20px 0;
+}
+.ratings-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px 15px 15px;
+  gap: 20px;
+}
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  border: 1px solid #087dbf;
+  padding: 5px;
+  min-width: 77px;
+}
+.rate:hover {
+  cursor: pointer;
+}
+.location-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 10px;
+}
+.filter-header {
+  font-family: "firaGO";
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+.location {
+  padding: 5px 20px;
+  border: 1px solid #087dbf;
+  border-radius: 10px;
+  font-family: "inter";
+  font-size: 20px;
+}
+.location:hover {
+  cursor: pointer;
+}
+.filter-act {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 20px 0;
+  gap: 10px;
+}
+#clear {
+  border: none;
+  background-color: white;
+  font-family: "firaGO";
+  font-weight: 200;
+  font-size: 24px;
+  color: rgb(110, 110, 110);
+}
+#filterButton {
+  border: 1px solid #087dbf;
+  background-color: white;
+  font-family: "firaGO";
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.filter-act button:hover {
+  cursor: pointer;
 }
