@@ -367,3 +367,122 @@ input[type="range"] {
 .filter-act button:hover {
   cursor: pointer;
 }
+.company-container {
+  width: calc(100% - 280px);
+  margin: 0 auto;
+  background-color: #efefef;
+  border-radius: 30px 30px 0 0;
+  /* position: relative; */
+  min-height: 450px;
+}
+.cover-img {
+  width: 100%;
+  position: relative;
+}
+.cover-img img {
+  width: 100%;
+}
+.profile {
+  width: calc(100% - 274px);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: auto;
+  align-items: baseline;
+}
+.company-container .send-message {
+  margin: 0;
+}
+.profile-pic {
+  position: absolute;
+  left: 20px;
+  top: 100%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+.profile-pic img {
+  height: 234px;
+  width: 234px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-bold {
+  font-family: "poppins";
+  font-size: 40px;
+  font-weight: 700;
+}
+.location-light {
+  font-family: "poppins";
+  font-weight: 400;
+  color: #50505080;
+}
+.about-us {
+  width: calc(100% - 280px);
+  background-color: #efefef;
+  margin: 40px auto;
+}
+.about-header {
+  font-family: "poppins";
+  font-size: 32px;
+  font-weight: 700;
+}
+.about-text {
+  width: 90%;
+  font-size: 27px;
+}
+.about-us > div {
+  padding: 20px;
+}
+.vacancies {
+  width: calc(100% - 280px);
+  margin: 0 auto;
+  font-family: "poppins";
+  font-size: 24px;
+  margin-bottom: 100px;
+  border-radius: 0 0 30px 30px;
+}
+.vacancies table {
+  width: 100%;
+  border-collapse: collapse;
+  outline: 0.5px solid black;
+  border-radius: 0 0 30px 30px;
+}
+.vacancies th,
+td {
+  border-bottom: 0.5px solid black;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+}
+.vacancies th:first-child,
+td:first-child {
+  text-align: left;
+}
+.vacancies th:last-child,
+td:last-child {
+  text-align: end;
+}
+.vacancies th {
+  background-color: #087dbf;
+  color: white;
+  font-weight: 700;
+}
+.vacancies td {
+  font-size: 18px;
+  background-color: #efefef;
+}
+.vacancies p {
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.vacancies tr:last-child td:last-child {
+  border-radius: 0 0 30px 0;
+}
+.vacancies tr:last-child td:first-child {
+  border-radius: 0 0 0 30px;
+}
+.vacancies tr:last-child td {
+  border-bottom: none;
+}

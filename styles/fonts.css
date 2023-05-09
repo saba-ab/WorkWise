@@ -6,3 +6,7 @@
   font-family: "inter";
   src: url(../fonts/inter.ttf) format("truetype");
 }
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
