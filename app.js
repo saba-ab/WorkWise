@@ -1,19 +1,26 @@
 let drop = document.getElementById("dropdawnBox");
 let talent = document.getElementById("talentDropdawn");
 talent.addEventListener("click", function () {
-  if (drop.style.opacity === "0") {
+  if ((drop.style.opacity === "0") & (drop.style.display === "none")) {
     drop.style.opacity = "1";
+    drop.style.display = "block";
   } else {
     drop.style.opacity = "0";
+    drop.style.display = "none";
   }
 });
 let filter = document.getElementById("filter");
 let filterBlock = document.getElementById("filterBlock");
 filter.addEventListener("click", function () {
-  if (filterBlock.style.opacity === "0") {
+  if (
+    (filterBlock.style.opacity === "0") &
+    (filterBlock.style.display === "none")
+  ) {
     filterBlock.style.opacity = "1";
+    filterBlock.style.display = "block";
   } else {
     filterBlock.style.opacity = "0";
+    filterBlock.style.display = "none";
   }
 });
 
