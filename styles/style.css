@@ -119,81 +119,7 @@ header {
   gap: 20px 30px;
   margin-bottom: 100px;
 }
-@media (max-width: 1260px) {
-  .container {
-    padding: 0 110px;
-  }
-}
-@media (max-width: 1025px) {
-  .container {
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  .talents-wrapper {
-    padding: 0 10px;
-    justify-content: space-evenly;
-  }
-  .talent {
-  }
-  .light-text p {
-    font-size: 10px;
-  }
-  .workwise {
-    padding-left: 30px;
-  }
-  .icons {
-    padding-right: 30px;
-  }
-  .dropdawn-box {
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-  .dropdawn-box .light-text {
-    display: none;
-  }
-  .input-container {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 883px) {
-  .bold-search {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .category-wrapper {
-  }
-  .workwise {
-    padding-left: 10px;
-  }
-  .icons {
-    padding-right: 10px;
-  }
-  .input-container {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 390px) {
-  .click-to-drop img {
-    display: none;
-  }
-  .filter-block {
-    width: none;
-  }
-  .filter-block .category p {
-    font-size: 10px;
-  }
-  .workwise p {
-    display: none;
-  }
-  .dropdawn-box p {
-    display: none;
-  }
-  .dropdawn-box {
-    padding: 0;
-    margin: 0 auto;
-  }
-}
+
 .talent {
   padding: 10px;
   border: 1px solid black;
@@ -449,13 +375,15 @@ input[type="range"] {
 .filter-act button:hover {
   cursor: pointer;
 }
+.company-wrapper {
+  padding: 0 140px;
+}
 .company-container {
-  width: calc(100% - 280px);
+  width: 100%;
   margin: 0 auto;
   background-color: #efefef;
   border-radius: 30px 30px 0 0;
-  /* position: relative; */
-  min-height: 450px;
+  min-height: 350px;
 }
 .cover-img {
   width: 100%;
@@ -463,9 +391,10 @@ input[type="range"] {
 }
 .cover-img img {
   width: 100%;
+  object-fit: cover;
 }
 .profile {
-  width: calc(100% - 274px);
+  width: 78%;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -498,8 +427,11 @@ input[type="range"] {
   font-weight: 400;
   color: #50505080;
 }
+.about-us-container {
+  padding: 0 140px;
+}
 .about-us {
-  width: calc(100% - 280px);
+  width: 100%;
   background-color: #efefef;
   margin: 40px auto;
 }
@@ -515,8 +447,12 @@ input[type="range"] {
 .about-us > div {
   padding: 20px;
 }
+.vacancies-container {
+  padding: 0 140px;
+  margin: 0 auto;
+}
 .vacancies {
-  width: calc(100% - 280px);
+  /* width: 50%; */
   margin: 0 auto;
   font-family: "poppins";
   font-size: 24px;
@@ -567,4 +503,156 @@ td:last-child {
 }
 .vacancies tr:last-child td {
   border-bottom: none;
+}
+@media (max-width: 1260px) {
+  .container {
+    padding: 0 110px;
+  }
+}
+@media (max-width: 1025px) {
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .talents-wrapper {
+    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+  .search input {
+    font-size: 24px;
+  }
+  .talent {
+  }
+  .light-text p {
+    font-size: 10px;
+  }
+  .workwise {
+    padding-left: 30px;
+  }
+  .icons {
+    padding-right: 30px;
+  }
+  .dropdawn-box {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .dropdawn-box .light-text {
+    display: none;
+  }
+  .input-container {
+    padding: 0 50px;
+  }
+  .input-text {
+    font-size: 28px;
+  }
+  .company-wrapper {
+    padding: 0 40px;
+  }
+  .company-container {
+  }
+  .profile {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .about-us-container {
+    padding: 0 40px;
+  }
+  .vacancies-container {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .vacancies th {
+    font-size: 24px;
+  }
+  .vacancies td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 883px) {
+  .bold-search {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .category-wrapper {
+  }
+  .workwise {
+    padding-left: 10px;
+  }
+  .icons {
+    padding-right: 10px;
+  }
+  .input-container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 390px) {
+  .click-to-drop img {
+    display: none;
+  }
+  .filter-block {
+    width: none;
+  }
+  .filter-block .category p {
+    font-size: 10px;
+  }
+  .workwise p {
+    display: none;
+  }
+  .dropdawn-box p {
+    display: none;
+  }
+  .dropdawn-box {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .search input {
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+  }
+  .input-text {
+    font-size: 20px;
+  }
+  .company-wrapper {
+    padding: 0 10px;
+  }
+  .company-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .profile {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .about-us-container {
+    padding: 0 10px;
+  }
+  .vacancies-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .vacancies th {
+    font-size: 12px;
+  }
+  .vacancies td {
+    font-size: 8px;
+  }
+  .profile-pic img {
+    transform: translateX(20%);
+  }
+  .vacancies p {
+    padding: 0 20px;
+  }
+  .vacancies p::after {
+    content: "rotate screen to view vacancies";
+    color: rgb(227, 82, 82);
+    font-size: 12px;
+    display: block;
+  }
 }
