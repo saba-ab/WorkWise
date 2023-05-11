@@ -9,11 +9,10 @@ body {
 header {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 .header-container {
-  width: calc(100% - 280px);
-  /* max-width: 1080px; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +25,7 @@ header {
   font-family: "inter";
   font-weight: 700;
   font-size: 40px;
+  padding-left: 140px;
 }
 .workwise a {
   text-decoration: none;
@@ -37,6 +37,7 @@ header {
 .icons {
   display: flex;
   align-items: center;
+  padding-right: 140px;
 }
 .icons > div {
   margin-right: 15px;
@@ -45,9 +46,10 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding: 0 160px;
 }
 .search {
-  width: calc(100% - 340px);
+  width: 100%;
   margin: 50px 0 50px 0;
   border: 1px solid black;
   border-radius: 62px;
@@ -103,25 +105,103 @@ header {
   cursor: pointer;
 }
 .container {
+  width: 100%;
   display: flex;
+  padding: 0 140px;
   justify-content: center;
 }
 .talents-wrapper {
-  width: calc(100% - 200px);
+  width: 100%;
   display: flex;
+  /* grid-template-columns: repeat(4, auto); */
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px 30px;
   margin-bottom: 100px;
 }
+@media (max-width: 1260px) {
+  .container {
+    padding: 0 110px;
+  }
+}
+@media (max-width: 1025px) {
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .talents-wrapper {
+    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+  .talent {
+  }
+  .light-text p {
+    font-size: 10px;
+  }
+  .workwise {
+    padding-left: 30px;
+  }
+  .icons {
+    padding-right: 30px;
+  }
+  .dropdawn-box {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .dropdawn-box .light-text {
+    display: none;
+  }
+  .input-container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 883px) {
+  .bold-search {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .category-wrapper {
+  }
+  .workwise {
+    padding-left: 10px;
+  }
+  .icons {
+    padding-right: 10px;
+  }
+  .input-container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 390px) {
+  .click-to-drop img {
+    display: none;
+  }
+  .filter-block {
+    width: none;
+  }
+  .filter-block .category p {
+    font-size: 10px;
+  }
+  .workwise p {
+    display: none;
+  }
+  .dropdawn-box p {
+    display: none;
+  }
+  .dropdawn-box {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
 .talent {
-  width: 392px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 30px;
   font-family: "inter";
 }
 .talent-image {
-  width: 340px;
+  /* width: 340px; */
   height: 284px;
   position: relative;
   object-fit: cover;
@@ -214,6 +294,7 @@ header {
   align-items: center;
   width: 29%;
   position: relative;
+  /* display: none; */
 }
 .click-to-drop {
   display: flex;
@@ -270,6 +351,7 @@ header {
   border-radius: 20px;
   border: 1px solid black;
   opacity: 0;
+  display: none;
 }
 .category-wrapper {
   display: flex;
