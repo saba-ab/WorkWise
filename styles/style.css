@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid; */
 }
 body {
   overflow-x: hidden;
@@ -466,7 +467,7 @@ input[type="range"] {
   border-radius: 0 0 30px 30px;
 }
 .vacancies th,
-td {
+.vacancies td {
   border-bottom: 0.5px solid black;
   width: 20%;
   text-align: center;
@@ -477,7 +478,7 @@ td:first-child {
   text-align: left;
 }
 .vacancies th:last-child,
-td:last-child {
+.vacancies td:last-child {
   text-align: end;
 }
 .vacancies th {
@@ -503,6 +504,47 @@ td:last-child {
 }
 .vacancies tr:last-child td {
   border-bottom: none;
+}
+
+.icons img {
+  width: 30px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.experience {
+  width: 100%;
+  padding: 0 180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.exp-table {
+  width: 80%;
+  background-color: #efefef;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 30px;
+}
+.exp-table table {
+  width: 100%;
+  text-align: center;
+}
+.exp-table th,
+.exp-table td {
+  width: 33.3%;
+  text-align: center;
+  padding: 10px;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 300;
+}
+.exp-table th {
+  font-size: 24px;
 }
 @media (max-width: 1260px) {
   .container {
@@ -567,6 +609,9 @@ td:last-child {
   .vacancies td {
     font-size: 16px;
   }
+  .experience {
+    padding: 0 40px;
+  }
 }
 @media (max-width: 883px) {
   .bold-search {
@@ -584,6 +629,24 @@ td:last-child {
   }
   .input-container {
     padding: 0 30px;
+  }
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .exp-table {
+    width: 100%;
+    /* display: block; */
+    /* margin: 0 auto; */
+  }
+  .exp-icon {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+  }
+  .exp-icon img {
+    margin: 0 auto;
   }
 }
 @media (max-width: 390px) {
@@ -638,10 +701,12 @@ td:last-child {
     margin: 0 auto;
   }
   .vacancies th {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 5px;
   }
   .vacancies td {
     font-size: 8px;
+    padding: 5px;
   }
   .profile-pic img {
     transform: translateX(20%);
@@ -655,11 +720,23 @@ td:last-child {
     font-size: 12px;
     display: block;
   }
-}
-.icons img {
-  width: 30px;
-}
-a {
-  text-decoration: none;
-  color: #000000;
+  .vacancies {
+    border-radius: none;
+  }
+  .exp-table th {
+    font-size: 16px;
+  }
+  .exp-table td {
+    font-size: 14px;
+  }
+  .experience {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  .company-wrapper {
+    margin-top: 40px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
 }
