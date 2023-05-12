@@ -656,3 +656,10 @@ td:last-child {
     display: block;
   }
 }
+.icons img {
+  width: 30px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
