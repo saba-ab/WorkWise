@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 10%;
   /* outline: 2px dotted; */
 }
 .workwise {
@@ -26,7 +26,7 @@ header {
   font-family: "inter";
   font-weight: 700;
   font-size: 40px;
-  padding-left: 140px;
+  /* padding-left: 140px; */
 }
 .workwise a {
   text-decoration: none;
@@ -38,7 +38,7 @@ header {
 .icons {
   display: flex;
   align-items: center;
-  padding-right: 140px;
+  /* padding-right: 140px; */
 }
 .icons > div {
   margin-right: 15px;
@@ -47,7 +47,7 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding: 0 160px;
+  padding: 0 10%;
 }
 .search {
   width: 100%;
@@ -55,7 +55,7 @@ header {
   border: 1px solid black;
   border-radius: 62px;
   box-shadow: 0px 4px 4px 0px #00000040;
-  padding: 0 25px 0 25px;
+  padding: 0 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,7 +108,7 @@ header {
 .container {
   width: 100%;
   display: flex;
-  padding: 0 140px;
+  padding: 0 10%;
   justify-content: center;
 }
 .talents-wrapper {
@@ -377,7 +377,7 @@ input[type="range"] {
   cursor: pointer;
 }
 .company-wrapper {
-  padding: 0 140px;
+  padding: 0 10%;
 }
 .company-container {
   width: 100%;
@@ -429,7 +429,7 @@ input[type="range"] {
   color: #50505080;
 }
 .about-us-container {
-  padding: 0 140px;
+  padding: 0 10%;
 }
 .about-us {
   width: 100%;
@@ -449,7 +449,7 @@ input[type="range"] {
   padding: 20px;
 }
 .vacancies-container {
-  padding: 0 140px;
+  padding: 0 10%;
   margin: 0 auto;
 }
 .vacancies {
@@ -465,13 +465,14 @@ input[type="range"] {
   border-collapse: collapse;
   outline: 0.5px solid black;
   border-radius: 0 0 30px 30px;
+  overflow-x: scroll;
 }
 .vacancies th,
 .vacancies td {
   border-bottom: 0.5px solid black;
   width: 20%;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 .vacancies th:first-child,
 td:first-child {
@@ -515,7 +516,7 @@ a {
 }
 .experience {
   width: 100%;
-  padding: 0 180px;
+  padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -538,7 +539,7 @@ a {
 .exp-table td {
   width: 33.3%;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   font-family: "poppins";
   font-size: 20px;
   font-weight: 300;
@@ -546,18 +547,18 @@ a {
 .exp-table th {
   font-size: 24px;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1440px) {
   .container {
-    padding: 0 110px;
-  }
-}
-@media (max-width: 1025px) {
-  .container {
-    padding: 0 20px;
     margin: 0 auto;
+    padding: 0 5%;
+  }
+  .header-container {
+    padding: 20px 5%;
   }
   .talents-wrapper {
-    padding: 0 10px;
+    padding: 0 5%;
+    /* display: flex; */
+    justify-content: center;
     justify-content: space-evenly;
   }
   .search input {
@@ -568,12 +569,6 @@ a {
   .light-text p {
     font-size: 10px;
   }
-  .workwise {
-    padding-left: 30px;
-  }
-  .icons {
-    padding-right: 30px;
-  }
   .dropdawn-box {
     margin: 0 auto;
     padding: 0 30px;
@@ -581,14 +576,11 @@ a {
   .dropdawn-box .light-text {
     display: none;
   }
-  .input-container {
-    padding: 0 50px;
-  }
   .input-text {
     font-size: 28px;
   }
   .company-wrapper {
-    padding: 0 40px;
+    padding: 0 5%;
   }
   .company-container {
   }
@@ -597,10 +589,10 @@ a {
     width: 100%;
   }
   .about-us-container {
-    padding: 0 40px;
+    padding: 0 5%;
   }
   .vacancies-container {
-    padding: 0 30px;
+    padding: 0 5%;
     margin: 0 auto;
   }
   .vacancies th {
@@ -610,7 +602,10 @@ a {
     font-size: 16px;
   }
   .experience {
-    padding: 0 40px;
+    padding: 0 5%;
+  }
+  .input-container {
+    padding: 0 5%;
   }
 }
 @media (max-width: 883px) {
@@ -628,7 +623,7 @@ a {
     padding-right: 10px;
   }
   .input-container {
-    padding: 0 30px;
+    padding: 0 5%;
   }
   .experience {
     display: flex;
@@ -637,8 +632,7 @@ a {
   }
   .exp-table {
     width: 100%;
-    /* display: block; */
-    /* margin: 0 auto; */
+    font-size: 14px;
   }
   .exp-icon {
     width: 100%;
@@ -647,6 +641,49 @@ a {
   }
   .exp-icon img {
     margin: 0 auto;
+  }
+  .profile {
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .company-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .workwise p {
+    display: none;
+  }
+  .vacancies table {
+    overflow-x: scroll;
+  }
+  .profile-pic {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .vacancies th {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .vacancies td {
+    font-size: 8px;
+    padding: 5px;
+  }
+  .vacancies {
+    border-radius: none;
+  }
+  .exp-table th {
+    font-size: 16px;
+  }
+  .exp-table td {
+    font-size: 14px;
   }
 }
 @media (max-width: 390px) {
@@ -677,60 +714,42 @@ a {
   .input-text {
     font-size: 20px;
   }
-  .company-wrapper {
-    padding: 0 10px;
-  }
   .company-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .profile {
+  /* .profile {
     margin-top: 100px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
+  } */
   .about-us-container {
-    padding: 0 10px;
+    padding: 0 5%;
   }
-  .vacancies-container {
+  /* .vacancies-container {
     padding: 0;
     margin: 0 auto;
-  }
-  .vacancies th {
-    font-size: 10px;
-    padding: 5px;
-  }
-  .vacancies td {
-    font-size: 8px;
-    padding: 5px;
-  }
-  .profile-pic img {
+  } */
+
+  /* .profile-pic img {
     transform: translateX(20%);
-  }
-  .vacancies p {
+  } */
+  /* .vacancies p {
     padding: 0 20px;
-  }
+  } */
   .vacancies p::after {
     content: "rotate screen to view vacancies";
     color: rgb(227, 82, 82);
     font-size: 12px;
     display: block;
   }
-  .vacancies {
-    border-radius: none;
-  }
-  .exp-table th {
-    font-size: 16px;
-  }
-  .exp-table td {
-    font-size: 14px;
-  }
+
   .experience {
-    padding: 0 10px;
     margin-bottom: 30px;
   }
   .company-wrapper {
