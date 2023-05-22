@@ -956,3 +956,121 @@ a {
     font-size: 18px;
   }
 }
+.fav-header-text {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "inter";
+}
+.heart-header-icon img {
+  width: 50px;
+}
+.fav-talent-wrapper {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.fav-talent {
+  display: flex;
+  padding: 2%;
+  border: 2px solid;
+  border-radius: 30px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.fav-talent-info {
+  font-family: "inter";
+}
+.favorites-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.fav-talent-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.fav-name {
+  font-size: 64px;
+}
+.fav-job {
+  font-size: 32px;
+  font-weight: 200;
+}
+.fav-talent-info > p {
+  margin-top: 20px;
+}
+.fav-rating {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.fav-rate {
+  font-size: 20px;
+}
+.fav-skills {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.ux-research {
+  background-color: #d9d4d4;
+  padding: 10px;
+  border-radius: 20px;
+}
+.fav-talent-buttons {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.projects-button button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+  padding: 20px;
+  font-size: 32px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+.projects-button button img {
+  width: 20px;
+}
+.projects-button:hover button {
+  background-color: #bd92ea;
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .fav-header-text h2 {
+    font-size: 40px;
+  }
+  .fav-name {
+    font-size: 30px;
+  }
+  .fav-job {
+    font-size: 20px;
+  }
+  .fav-rate {
+    font-size: 18px;
+  }
+  .ux-research {
+    font-size: 12px;
+  }
+  .projects-button button {
+    font-size: 22px;
+    min-width: 260px;
+  }
+}
+@media (max-width: 1180px) {
+  .fav-talent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fav-talent-buttons {
+    margin: 0 auto;
+  }
+}
